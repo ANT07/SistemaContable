@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{794CE628-61E9-43AD-BFE4-52AB5172006E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaContable_program2", "WebApplication1\SistemaContable_program2.csproj", "{794CE628-61E9-43AD-BFE4-52AB5172006E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
