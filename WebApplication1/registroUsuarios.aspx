@@ -1,27 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="usuarios.aspx.cs" Inherits="FormulariosWeb.usuarios" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Usuarios Planillas</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <h2>Usuarios Sistema Planilla</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/inicio.Master" AutoEventWireup="true" CodeBehind="registroUsuarios.aspx.cs" Inherits="WebApplication1.registroUsuarios" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2>Usuarios Sistema Planilla</h2>
         <div class="row">
             <div class="col-sm-2">
                 <div class="input-group">
-                    <asp:Button class="form-control" ID="btnCrearUsuario" runat="server" Text="Crear Usuario" data-toggle="modal" data-target="#CrearUsuariosModal"/>
+                    <asp:Button class="form-control" ID="btnCrearUsuario" runat="server" Text="Crear Usuario" data-toggle="modal" data-target="#CrearUsuariosModal" OnClick="btnCrearUsuario_Click"/>
                 </div>
             </div>
         </div>
@@ -57,11 +42,9 @@
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-default">Limpiar</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                        <asp:Button class="btn btn-default" ID="btnGuardarDatos" runat="server" Text="Guardar" OnClick="btnGuardarDatos_Click" />
+                        <asp:Button class="btn btn-default" ID="btnGuardarDatos" runat="server" Text="Guardar" OnClick="btnCrearUsuario_Click" />
                     </div>
                 </div>
             </div>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>

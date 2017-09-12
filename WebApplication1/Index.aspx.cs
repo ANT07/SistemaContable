@@ -45,7 +45,7 @@ namespace FormulariosWeb
                     if (lectura.Read())
                     {
                         //si hay resultado, el usuario es redireccionado a la siguiente pagina
-                        this.Response.Redirect("usuarios.aspx");
+                        this.Response.Redirect("registroUsuarios.aspx");
                     }
                     else
                     {
