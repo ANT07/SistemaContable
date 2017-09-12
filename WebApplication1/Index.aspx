@@ -17,9 +17,14 @@
 </head>
 <body>
     <form id="form1" runat="server" class="form-horizontal">
-        <h2>Ingreso al Sistema</h2>
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-md-4 col-md-offset-4" align="center">
+                <h2>Sistema Contable</h2>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <asp:TextBox class="form-control" ID="txtUsuario" runat="server" required="required"></asp:TextBox>
@@ -30,8 +35,10 @@
                     <asp:TextBox class="form-control" ID="txtPassword" runat="server" TextMode="Password" required="required"></asp:TextBox>
                 </div>
                 <br />
-                <div class="input-group">
-                    <asp:Button class="form-control" ID="btnLogin" runat="server" Text="Iniciar Sesion" OnClick="btnLogin_Click" />
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <asp:Button class="form-control" ID="btnLogin" runat="server" Text="Iniciar Sesion" OnClick="btnLogin_Click" />
+                    </div>
                 </div>
             </div>
         </div>
