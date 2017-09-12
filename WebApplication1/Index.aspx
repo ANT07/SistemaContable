@@ -21,7 +21,6 @@
             <div class="col-md-4 col-md-offset-4" align="center">
                 <h2>Sistema Contable</h2>
             </div>
-
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4" align="center">
@@ -41,7 +40,7 @@
                 </div>
                 <br />
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-6 col-md-offset-3">
                         <asp:Button class="form-control" ID="btnLogin" runat="server" Text="Iniciar Sesion" OnClick="btnLogin_Click" />
                     </div>
                 </div>
