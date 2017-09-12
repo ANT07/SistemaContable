@@ -15,19 +15,6 @@ namespace FormulariosWeb
         //TODO SUPONIENDO QUE SEGUIREMOS EL DETALLE DE TABLAS QUE EL ING HA MANDADO
         protected void Page_Load(object sender, EventArgs e)
         {
-            //esta parte es para comprobar que la pagina ha sido cargada de nuevo por el envio de los datos invalidos de usuario
-            if (IsPostBack)
-            {
-                if (Session["validado"] != null)
-                {
-                    bool validado = (bool)Session["validado"];
-                    if (validado == false)
-                    {
-                        this.Response.Write("error de usuario");
-                    }
-                }
-            }
-
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -62,8 +49,8 @@ namespace FormulariosWeb
                     }
                     else
                     {
-                        //si no almacenamos la variable false para que sea leida cuando la pagina se recarge nuevamente y aparesca el mensaje de error de usuario
-                        Session["validado"] = false;
+                        //mensaje de error de usuario
+                        usuarioErroneo.Text = "Error de Usuario";
                     }
                 }
 
