@@ -11,6 +11,8 @@ namespace FormulariosWeb
 {
     public partial class Index : System.Web.UI.Page
     {
+
+        //TODO SUPONIENDO QUE SEGUIREMOS EL DETALLE DE TABLAS QUE EL ING HA MANDADO
         protected void Page_Load(object sender, EventArgs e)
         {
             //esta parte es para comprobar que la pagina ha sido cargada de nuevo por el envio de los datos invalidos de usuario
